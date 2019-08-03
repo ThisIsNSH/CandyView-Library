@@ -1,10 +1,4 @@
-
-Candy View
-=======
-
-A delicious library to implement RecyclerView in one line of code.  
-
-![](asset/main.png)
+![](https://github.com/ThisIsNSH/Candy-View/blob/master/asset/main.jpg?raw=true)
 
 
 Download via Gradle
