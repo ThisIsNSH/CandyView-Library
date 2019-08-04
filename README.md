@@ -26,7 +26,7 @@ allprojects {
 Add the dependency in your App build.gradle:
 ```groovy
 dependencies {
-    implementation 'com.github.ThisIsNSH:CandyView:1.1'
+    implementation 'com.github.ThisIsNSH:CandyView:1.0'
 }
 ```
 
@@ -45,8 +45,8 @@ class ExampleActivity extends Activity {
         // Initialize CandyView object
         CandyView candyView = findViewById(R.id.candy);
         
-        // Create RecyclerView using make(Context, Adapter Layout, Data List, Data Model Class)
-        candyView.make(this, R.layout.adapter_layout, data_list, Model.class);
+        // Create RecyclerView using make(Context content, int Layout, List<Model> Data, Model Class)
+        candyView.make(this, R.layout.adapter, dataList, Model.class);
     
     }
     
