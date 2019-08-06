@@ -26,7 +26,10 @@ allprojects {
 Add the dependency in your App build.gradle:
 ```groovy
 dependencies {
-    implementation 'com.github.ThisIsNSH:CandyView:1.0'
+    implementation 'com.github.ThisIsNSH:CandyView:1.1'
+    // add these for internal functioning
+    implementation 'com.squareup.picasso:picasso:{latest version}'
+    implementation 'com.android.support:recyclerview-v7:{build version}'
 }
 ```
 
