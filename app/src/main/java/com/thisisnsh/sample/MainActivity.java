@@ -3,6 +3,7 @@ package com.thisisnsh.sample;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.thisisnsh.sugarlibrary.CandyView;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements CandyView.SugarLi
     CandyView candyView;
     List<Model> list = new ArrayList<>();
     TextView tv;
+    RelativeLayout relative;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,10 +47,13 @@ public class MainActivity extends AppCompatActivity implements CandyView.SugarLi
     public void onCandyRecycled(View view, int position) {
         if (position == 1)
             tv.setTextColor(getResources().getColor(R.color.colorAccent));
+//        relative.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+
     }
 
     @Override
     public void onCandyMade() {
+//        relative = (RelativeLayout) candyView.getViewById(R.id.relative);
         tv = (TextView) candyView.getViewById(R.id.name);
     }
 
