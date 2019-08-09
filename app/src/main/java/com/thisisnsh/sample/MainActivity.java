@@ -47,13 +47,13 @@ public class MainActivity extends AppCompatActivity implements CandyView.SugarLi
     public void onCandyRecycled(View view, int position) {
         if (position == 1)
             tv.setTextColor(getResources().getColor(R.color.colorAccent));
-//        relative.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+        relative.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
 
     }
 
     @Override
     public void onCandyMade() {
-//        relative = (RelativeLayout) candyView.getViewById(R.id.relative);
+        relative = (RelativeLayout) candyView.getViewById(R.id.relative);
         tv = (TextView) candyView.getViewById(R.id.name);
     }
 

@@ -249,7 +249,6 @@ public class CreamAdapter extends RecyclerView.Adapter<CreamAdapter.SuperViewHol
      *           be returned.
      */
     public View getViewById(@NonNull final int id) {
-        System.out.println(viewListWithParent);
         for (int i = 0; i < viewListWithParent.size(); i++) {
             if (viewListWithParent.get(i).getId() == id)
                 return viewListWithParent.get(i);
