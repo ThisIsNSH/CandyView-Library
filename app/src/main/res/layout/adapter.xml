@@ -15,8 +15,8 @@
         app:cardUseCompatPadding="true">
 
         <RelativeLayout
-            android:layout_width="match_parent"
             android:id="@+id/relative"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical">
 
@@ -55,6 +55,26 @@
                 android:layout_toRightOf="@id/price"
                 android:textColor="#000"
                 android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/price"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/image"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="#fff" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/button"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:numStars="3" />
 
         </RelativeLayout>
 

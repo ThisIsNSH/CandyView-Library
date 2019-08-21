@@ -2,16 +2,26 @@ package com.thisisnsh.sample;
 
 public class Model {
 
-   String image;
-   String name;
-   float amount;
-   int price;
+    String image;
+    String name;
+    float amount;
+    int price;
+    String button;
 
-    public Model(String image, String name, float amount, int price) {
+    public Model(String button, String image, String name, float amount, int price) {
         this.image = image;
+        this.button = button;
         this.name = name;
         this.amount = amount;
         this.price = price;
+    }
+
+    public String getButton() {
+        return button;
+    }
+
+    public void setButton(String button) {
+        this.button = button;
     }
 
     public String getImage() {
