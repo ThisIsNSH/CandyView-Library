@@ -41,7 +41,24 @@ Get Started 🏁
 --------
 
 
-#### 1. Add the code in Activity to create `CandyView`:   
+#### 1. Add the code to create `CandyView`:   
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.thisisnsh.sugarlibrary.CandyView
+        android:id="@+id/candy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+```
+
 ```java
 class ExampleActivity extends Activity {
 
